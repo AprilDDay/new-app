@@ -1,4 +1,5 @@
 # new-app
+Vue project
 
 ## Project setup
 ```
