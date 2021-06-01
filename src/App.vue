@@ -8,6 +8,7 @@ Vue.use(FullPageModal)
     <HelloWorld msg="Have a Nice Life"/>
     <PageTwo msg="Movies ROCK" talk="drummer boy"/>
     <Counter msg="Hellow earthlings"/>
+    <Example />
   </div>
 
 </template>
@@ -21,6 +22,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import PageTwo from './components/PageTwo.vue'
 import Counter from './components/Counter.vue'
 import FullModalPopUp from './components/FullModalPopUp.vue'
+import Example from './components/Example.vue'
 
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     HelloWorld, 
     PageTwo,
     Counter,
-    FullModalPopUp
+    FullModalPopUp,
+    Example
   }
 }
 </script>
