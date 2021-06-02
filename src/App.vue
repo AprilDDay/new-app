@@ -1,14 +1,12 @@
-import FullPagePopUp.vue from 'vue-fullpage-modal'
-Vue.use(FullPageModal)
 
 <template>
   <div id="app">
-
+    <!--<Hover /> -->
     <FullModalPopUp /> 
     <HelloWorld msg="Have a Nice Life"/>
     <PageTwo msg="Movies ROCK" talk="drummer boy"/>
-    <Counter msg="Hellow earthlings"/>
-    <Example />
+    <Counter msg="Hello earthlings"/>
+    <!-- <Example /> -->
   </div>
 
 </template>
@@ -22,7 +20,8 @@ import HelloWorld from './components/HelloWorld.vue'
 import PageTwo from './components/PageTwo.vue'
 import Counter from './components/Counter.vue'
 import FullModalPopUp from './components/FullModalPopUp.vue'
-import Example from './components/Example.vue'
+//import Example from './components/Example.vue'
+//import Hover from './components/Hover.vue'
 
 export default {
   name: 'App',
@@ -30,8 +29,9 @@ export default {
     HelloWorld, 
     PageTwo,
     Counter,
-    FullModalPopUp,
-    Example
+    FullModalPopUp//,
+    //Example//,
+  //  Hover
   }
 }
 </script>
