@@ -1,12 +1,14 @@
-import Vue from 'vue'
+//import Vue from 'vue'
+//import App from './App.vue'
+
+//Vue.config.productionTip = false
+
+//new Vue({
+//  render: h => h(App),
+//}).$mount('#app')
+
+
+import { createApp } from 'vue'
 import App from './App.vue'
-//import Hover from './components/Hover.vue'
 
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
-
-
-//Vue.createApp(AttributeBinding).mount('#bind-attribute')
+createApp(App).mount('#app')
