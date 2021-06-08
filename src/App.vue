@@ -4,6 +4,7 @@
     <HelloWorld msg="Have a Nice Life"/>
     <PageTwo msg="Movies ROCK" talk="drummer boy"/>
     <Counter msg="Hello earthlings"/>
+    
   </div> 
 </template>
 
