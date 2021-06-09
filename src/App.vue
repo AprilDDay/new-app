@@ -1,30 +1,39 @@
 <template>
   <div id="app">   
-    <FullModalPopUp />
-    <HelloWorld msg="Have a Nice Life"/>
-    <PageTwo msg="Movies ROCK" talk="drummer boy"/>
-    <Counter msg="Hello earthlings"/>
-    
+
+    <div id="components-demo">
+        <button-counter></button-counter>
+    </div>
+
   </div> 
 </template>
 
-<script> 
-  import FullModalPopUp from './components/FullModalPopUp.vue'
-  import HelloWorld from './components/HelloWorld.vue'
-  import PageTwo from './components/PageTwo.vue'
-  import Counter from './components/Counter.vue'
 
+<script>
+    //import { createApp } from 'vue';
+    //import Vue from 'vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld, 
-    PageTwo,
-    Counter,
-    FullModalPopUp
-   
-  }
-}
+    import * as Vue from 'vue'
+    const app = Vue.createApp({})
+  
+    const count=0
+
+    app.component('button-counter', {
+        data() {
+            return{
+                count: 0
+            }
+        },
+    template: 
+        <button v-on:click='count++'>
+            You clicked me {{ count }} times
+        </button>
+      })
+
+  app.mount('#components-demo')
+
+  export default app;
+
 </script>
 
 <style>
