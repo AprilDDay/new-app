@@ -1,6 +1,8 @@
 <template>
   <div id="app">   
-
+    <div>
+      Happy happy joy joy
+    </div>
     <div id="components-demo">
         <button-counter></button-counter>
     </div>
@@ -10,9 +12,9 @@
 
 
 <script>
-    //import { createApp } from 'vue';
+    
     //import Vue from 'vue'
-
+    //import { createApp } from 'vue'
     import * as Vue from 'vue'
     const app = Vue.createApp({})
   
@@ -32,7 +34,7 @@
 
   app.mount('#components-demo')
 
-  export default app;
+  //export default app;
 
 </script>
 
